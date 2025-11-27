@@ -1,0 +1,106 @@
+/* Estilos del menú de navegación (navbar) */
+.navbar{
+    width: 100%;                    /* La barra ocupa todo el ancho de la pantalla */
+    min-height: 10vh;               /* Altura mínima del 12% del alto de la pantalla */
+    max-height: 20vh;               /* Altura máxima del 50% del alto de la pantalla */
+    background-color: rgb(0, 0, 0) !important; /* Fondo negro (forzado con !important) */
+    position: fixed;                /* La barra queda fija en la parte superior */
+    z-index: 3;                     /* La hace estar por encima de otros elementos */
+}
+
+/* Estilo de los enlaces dentro del navbar */
+.navbar a.nav-link {
+    background-color: white;        /* Fondo blanco para cada botón */
+    display: flex;
+    color: rgb(0, 0, 0) !important;          /* Texto rojo (forzado con !important) */
+    padding: 8px 20px !important;   /* Espaciado interno (alto, lados) */
+    margin: 0 10px !important;                  /* Separación horizontal entre botones */
+    border-radius: 15px !important;            /* Bordes redondeados */
+    font-weight: 600;               /* Texto seminegrita */
+    text-decoration: none;          /* Quita el subrayado de los enlaces */
+    transition: 0.5s ease;          /* Suaviza las animaciones al pasar el mouse */
+    justify-content: center !important; /* Centra los links horizontalmente */
+    align-items: center !important;     /* Centra verticalmente */
+}
+
+/* Efecto cuando el usuario pasa el mouse por encima */
+.navbar a.nav-link:hover {
+    background-color: #000000 !important;      /* Fondo negro al pasar el mouse */
+    color: #ffffff !important;                 /* Texto verde fosforescente */
+    transform: scale(1);            /* El botón se hace 2 veces más grande */
+}
+
+/* Sección secundaria debajo del navbar (espaciador) */
+#secundario{
+    width: 100% ;                   /* Ancho completo */
+    height: 12vh;                   /* Altura igual a la barra para evitar que la tapa */
+}
+
+/* Contenedor sin márgenes ni padding */
+.container-fluid.contenedor{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Variante del contenedor sin márgenes ni padding */
+.navbar.navbar-expand-lg.bg-body-tertiary.contenedor{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Estilos para imágenes del navbar */
+img{
+    height: 12vh;                   /* La imagen tendrá altura igual al navbar */
+    border:none !important;         /* Sin borde */
+}
+
+
+/* Estilos aplicados solo cuando la pantalla es grande (>= 990px) */
+@media(min-width:990px){
+
+    a{
+        direction: rtl;             /* Dirección del contenido de derecha a izquierda */
+        padding-right: 30% !important; /* Espacio a la derecha de los enlaces */
+    }
+    
+    a:hover{
+        background: linear-gradient( transparent, rgb(136, 255, 0) , transparent); 
+        /* Fondo degradado negro cuando el mouse pasa por el enlace */
+    }
+}
+
+
+/* Estilos aplicados cuando la pantalla es pequeña (<= 990px) */
+@media(max-width:990px){
+    a{
+        direction: rtl;              /* Dirección del texto derecha → izquierda */
+        padding-right: 3% !important; /* Espacio extra a la derecha */
+    }
+    
+    a:hover{
+        background-color: rgb(255, 255, 255) ; /* Fondo blanco al pasar el mouse */
+    }
+}
+
+/* Estilo del pie de página */
+footer{
+    width: 100%;                     /* Ocupa todo el ancho */
+    height: 10vh;                    /* Altura del 20% de la pantalla */
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+}
+
+
+/* ===== Estilos de la barra de desplazamiento (scrollbar) ===== */
+
+/* Fondo de la barra de scroll */
+body::-webkit-scrollbar{
+    width: 10px;                     /* Tamaño del ancho de la barra */
+    border-radius: 4px;              /* Bordes ligeramente redondeados */
+    background-color: rgb(0, 0, 0); /* Color del fondo */
+}
+
+/* Thumb: el botón deslizable de la barra */
+body::-webkit-scrollbar-thumb{
+    border-radius: 4px;              /* Bordes redondeados del thumb */
+    background-color: rgba(0, 0, 0, 1); /* Color cian brillante del thumb */
+}
