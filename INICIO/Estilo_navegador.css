@@ -1,12 +1,12 @@
 /* Estilos del menú de navegación (navbar) */
 .navbar{
-    width: 100%;                    /* La barra ocupa todo el ancho de la pantalla */
-    min-height: 10vh;               /* Altura mínima del 12% del alto de la pantalla */
-    max-height: 20vh;               /* Altura máxima del 50% del alto de la pantalla */
+    width: 100%;                                    /* La barra ocupa todo el ancho de la pantalla */
+    min-height: 12vh;                               /* Altura mínima del 12% del alto de la pantalla */
+    max-height: 50vh;                                /* Altura máxima del 50% del alto de la pantalla */
     background-color: rgb(0, 0, 0) !important; /* Fondo negro (forzado con !important) */
-    position: fixed;                /* La barra queda fija en la parte superior */
-    z-index: 2;                      /* La hace estar por encima de otros elementos */
-    font-size: 1.4rem;                    
+    position: fixed;                                /* La barra queda fija en la parte superior */
+    z-index: 1;                                        /* La hace estar por encima de otros elementos */
+    font-size: 1.5rem;                    
 }
 
 /* Estilo de los enlaces dentro del navbar */
@@ -27,14 +27,14 @@
 /* Efecto cuando el usuario pasa el mouse por encima */
 .navbar a.nav-link:hover {
     background-color: #000000 !important;      /* Fondo negro al pasar el mouse */
-    color: #ffffff !important;                 /* Texto verde fosforescente */
-    transform: scale(1.5);            /* El botón se hace 2 veces más grande */
+    color: #000000 !important;                 /* Texto verde fosforescente */
+    transform: scale(1.2);            /* El botón se hace 2 veces más grande */
 }
 
 /* Sección secundaria debajo del navbar (espaciador) */
 #secundario{
     width: 100% ;                   /* Ancho completo */
-    height: 10vh;                   /* Altura igual a la barra para evitar que la tapa */
+    height: 20vh;                   /* Altura igual a la barra para evitar que la tapa */
 }
 
 /* Contenedor sin márgenes ni padding */

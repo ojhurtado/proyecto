@@ -4,7 +4,7 @@
 
     .principal{
         width: 100%;
-        max-height: 100vh;
+        max-height: vh;
     }
     
     .formato-i{
@@ -28,14 +28,7 @@
         background-size: cover;
     }
     
-    /*.formato-t{
-        width: 100%;
-        padding: 3%;
-        text-align: center;
-    }
-
-
-
+  
     /* Section contenido5*/
 
     #contenido5{
