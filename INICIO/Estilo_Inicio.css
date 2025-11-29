@@ -55,20 +55,20 @@ body{
     
     .formato-i{
         min-height: 50vh ;
-        width: 50%;
-        padding: 3%;
+        width: 20%;
+        padding: 2%;
         border: none;
     }
     
     .formato-i.img0{
-        background-image: linear-gradient( to left, #ffffff, transparent),url('../Recursos/Imagenes_inicio/Desierto.jpg');
+        background-image: linear-gradient( to left, #ffffff, transparent),url('../recursos/CONTENIDO/TECHO_CASA.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         float: left;
     }
     
     .formato-i.img1{
-        background-image: linear-gradient( to right, #ffffff, transparent),url('../Recursos/Imagenes_inicio/Represa.jpg');
+        background-image: linear-gradient( to right, #ffffff, transparent),url('../recursos/CONTENIDO/Represa.jpg');
         background-size: cover;
         float: right;
     }
@@ -85,39 +85,35 @@ body{
         float: left;
     }
     
-   .formato-t{              /* Selecciona cualquier elemento con la clase formato-t */
-    min-height: 10vh;    /* Define una altura mínima del 50% del alto total de la pantalla del usuario */
-    width: 80%;          /* El ancho del elemento será el 50% del contenedor padre */
-    padding: 5%;
-    margin: auto;         /* Agrega un espacio interno del 2% en todos los lados del elemento */
-    font-size: 2rem;  /* Tamaño del texto: 1.05 veces el tamaño base del navegador (normalmente 16px) */
+   .formato-t{
+        min-height: 50vh;
+        width: 50%;
+        padding: 2%;
+        overflow: auto;
+        font-size: 1.5rem;
     }
-    
-    .formato-t.texto0{
-        max-height: 10vh;
-        color: rgb(0, 0, 0);
-        text-align: center !important;
+
+     .formato-t.texto0{
+        direction: ltr;
+        float: right;
     }
     
     .formato-t.texto1{
-        direction: rtl ;
-        float: right !important;
-        width:50%;
-        color: rgb(235, 219, 0);
+        direction: ltr;
+        float: left;
     }
    
     .formato-t.texto2{
-        direction: ltr;
-        float: left ;
-        width:50%;
-        color: rgb(0, 255, 55);
+        width: 70% !important;
+        min-height: 30vh !important;
+        padding: 1% !important;
+        direction: ltr !important;
+        float: right !important;
     }
     
     .formato-t.texto3{
-        direction: ltr;
-        float: left;
-        width:50%;
-        color: rgb(235, 219, 0);
+        direction: ltr !important;
+        float: left !important;
     }
 
     /* Section contenido5*/
@@ -201,7 +197,7 @@ body{
     }
     
     .txt{
-        border: 6px solid rgb(0, 0, 0);
+        border: 5px solid rgb(0, 0, 0);
         border-radius: 10px;
         width: 90%;
         margin: auto;

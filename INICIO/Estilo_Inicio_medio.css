@@ -4,7 +4,7 @@
 
     .principal{
         width: 100%;
-        max-height: vh;
+        max-height: 100vh;
     }
     
     .formato-i{
@@ -26,6 +26,12 @@
     .formato-i.img3{
         background-image: linear-gradient( to left, #ffffff, transparent),url('../Recursos/Imagenes_inicio/Campo_eolica.jpg');
         background-size: cover;
+    }
+
+     .formato-t{
+        width: 100%;
+        padding: 3%;
+        text-align: center;
     }
     
   

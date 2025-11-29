@@ -34,12 +34,12 @@
 /* Sección secundaria debajo del navbar (espaciador) */
 #secundario{
     width: 100% ;                   /* Ancho completo */
-    height: 20vh;                   /* Altura igual a la barra para evitar que la tapa */
+    height: 12vh;                   /* Altura igual a la barra para evitar que la tapa */
 }
 
 /* Contenedor sin márgenes ni padding */
 .container-fluid.contenedor{
-    margin: 1%;
+    margin: 0%;
     padding: 0%;
 }
 
