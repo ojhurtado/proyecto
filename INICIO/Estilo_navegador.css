@@ -52,7 +52,7 @@
 /* Estilos para imágenes del navbar */
 img{
     height: 15vh;                   /* La imagen tendrá altura igual al navbar */
-    border: 2px solid rgb(157, 255, 0);         /* Sin borde */
+    border: 3px solid rgb(115, 255, 0);         /* Sin borde */
 }
 
 
@@ -86,7 +86,7 @@ img{
 /* Estilo del pie de página */
 footer{
     width: 100%;                     /* Ocupa todo el ancho */
-    height: 5vh;                    /* Altura del 20% de la pantalla */
+    height: 10vh;                    /* Altura del 20% de la pantalla */
     background-color: rgb(255, 255, 255); /* Fondo blanco */
 }
 
@@ -101,6 +101,6 @@ body::-webkit-scrollbar{
 
 /* Thumb: el botón deslizable de la barra */
 body::-webkit-scrollbar-thumb{
-    border-radius: 4px;              /* Bordes redondeados del thumb */
+    border-radius: 6px;              /* Bordes redondeados del thumb */
     background-color: rgb(0, 255, 221); /* Color cian brillante del thumb */
 }

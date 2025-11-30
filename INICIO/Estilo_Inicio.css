@@ -7,7 +7,7 @@ body{
 
 #contenido1{
     width: 100%;
-    height: 88vh;
+    height: 80vh;
 }
 
 .carousel{
@@ -24,8 +24,8 @@ body{
 
 .car{
     width: 100%;
-    height: 88vh;
-    background-size: 100% 88vh;
+    height: 80vh;
+    background-size: 100% 80vh;
     font-size: 1.2rem;  
 
 }
@@ -50,7 +50,7 @@ body{
 
     .principal{
         width: 100%;
-        height: 70vh;
+        height: 80vh;
     }
     
     .formato-i{
@@ -104,10 +104,10 @@ body{
         direction: ltr;
         float: left;
     }
-   |
+   
     .formato-t.texto2{
         direction: ltr;
-        float: right;
+        float: right !important;
     }
     
     .formato-t.texto3{
@@ -117,81 +117,76 @@ body{
 
     /* Section contenido5*/
     
-    #contenido5{
-        width: 100%;
-        height: 40vh;
-        display: flex;
+    #contenido5 {
+    width: 100%;          /* El contenedor ocupa todo el ancho disponible */
+    height: 70vh;         /* Su altura es del 70% de la altura visible de la pantalla */
+    display: flex;        /* Activa flexbox para alinear los elementos internos en fila */
     }
-    .bordes{
-        height: 5vh;
-        filter: brightness(1.1);
-        mix-blend-mode:multiply;
+
+    /* Estilo base para las imágenes o elementos con bordes */
+    .bordes {
+        border: none !important;
+        height: 40vh;                 /* Altura establecida al 30% de la pantalla visible */
+        filter: brightness(1.1);      /* Aumenta ligeramente el brillo (10% extra) */
+        mix-blend-mode: multiply;     /* Mezcla el elemento con el fondo para un efecto visual */
     }
-    
-    #texto{
-        width:90%;
-        text-align: center;
-        margin: auto;
-        color: rgb(25, 0, 255);
-        padding: 5%;
-        overflow: auto;
-        font-size: 1.7rem;
+
+    /* Estilos para la sección de texto */
+    #texto {
+        width: 100%;                   /* El texto ocupa el 75% del ancho del contenedor */
+        text-align: center;           /* Centra el texto horizontalmente */
+        margin: 0 20px !important;    /* Márgenes laterales de 30px, forzado con !important */
+        color: rgb(0, 0, 0);          /* Color del texto: negro */
+        padding: 2px;                  /* Sin relleno interno */
+        overflow: auto;               /* Si el contenido sobrepasa el tamaño, añade scroll */
+        font-size: 1.3rem;            /* Tamaño de letra ligeramente grande */
     }
-    
-    .bordes.invertido{
-        transform: scaleX(-1);
-    }
-    
+
     /*section contenido6*/
     
     #contenido6{
         width: 100%;
-        height: 70vh;
+        height: 65vh;
         display: flex;
     }
     
     #carouselExampleSlidesOnly{
-        width: 50%;
-        height: 50vh;
-        
+        width: 100%;
+        height: 40vh;
     }
     
     .img-slide{
-        height: 50vh;
-        width: 10%;
+        height: 65vh;
+        width: 100%;
     }
     
     .img-slide.img1{
-    
-        background-image:linear-gradient(to left,rgb(255, 255, 255),transparent), url('../Recursos/Imagenes_inicio/Cafe.jpg');
-    
-        /*width --- height*/
-        background-size: 100% 70vh;
+        background-image: url("../RECURSO/CONTENIDO/CAMPO_SOLAR.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 65vh;
     }
     
     .img-slide.img2{
-    
-        background-image:linear-gradient(to left,rgb(255, 255, 255),transparent), url('../Recursos/Imagenes_inicio/Fruta.jpg');
-    
-        /*width --- height*/
-        background-size: 100% 70vh;
+        background-image: url("../RECURSO/CONTENIDO/PANELES_SOLARES.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 65vh;
     }
     
     
     .img-slide.img3{
-    
-        background-image:linear-gradient(to left,rgb(255, 255, 255),transparent), url('../Recursos/Imagenes_inicio/platacion_aceite.jpg');
-    
-        /*width --- height*/
-        background-size: 100% 70vh;
+        background-image: url("../RECURSO/CONTENIDO/MANO_SOLAR.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 65vh;
     }
     
     #texto-cont6{
-        width: 50%;
-        direction: rtl;
-        margin: 5%;
+        min-height: 40vh;
+        width: 90%;
+        padding: 6%;
+        text-align: center;
+        direction: ltr;
         overflow: auto;
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     
     .txt{
