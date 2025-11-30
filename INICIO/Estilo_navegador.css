@@ -6,7 +6,7 @@
     background-color: rgb(0, 0, 0) !important; /* Fondo negro (forzado con !important) */
     position: fixed;                                /* La barra queda fija en la parte superior */
     z-index: 1;                                        /* La hace estar por encima de otros elementos */
-    font-size: 1.5rem;                    
+    font-size: 1.2rem;                    
 }
 
 /* Estilo de los enlaces dentro del navbar */

@@ -11,22 +11,22 @@
     <!--Fin implementacion Bootstrap-->
 
     <link rel="stylesheet" href="../INICIO/estilo_navegador.css">
-    <link rel="stylesheet" href="../CALCULADORA/Estilo_calculadora.css">
-    <link rel="stylesheet" href="../CALCULADORA/Estilo_calculadora_medio.css">
-    <script src="../CALCULADORA/Calculadora.js"></script>
+    <link rel="stylesheet" href="Estilo_calculadora.css">
+    <link rel="stylesheet" href="Estilo_medio_calculadora.css">
+    <script src="Calculadora.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary contenedor" >
         <div class="container-fluid contenedor" >
-          <img src="../RECURSO/LOGO/logo.png">
+          <img src="../RECURSO/LOGO/logo.png" alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="../INICIO/Inicio.html">Inicio</a>
-              <a class="nav-link" href="../DASHBOARD/dashboard.html">Dashboard</a>
-              <a class="nav-link" href="../CALCULADORA/calculadora.html">Calculadora</a>
+              <a class="nav-link active" aria-current="page" href="../Inicio/Inicio.html">Inicio</a>
+              <a class="nav-link" href="../Dashboard/Dashboard.html">Dashboard</a>
+              <a class="nav-link" href="#">Calculadora</a>
             </div>
           </div>
         </div>
@@ -34,21 +34,30 @@
     <div id="secundario">
     </div>
     <main id="contenido">
+
       <img src="../RECURSO/CALCULADORA/BOMBILLO.png" alt="" class="bordes">
-                <form action="" id="formulario">
-                    <h1>Calculadora</h1>
-                    <p>
-                      Da el primer paso para conocer tu consumo energetico mensual, ingresa el valor de tu consumo en Kwh
-                    </p>
-              <div class="input-group mb-3">
+
+        
+        <form action="" id="formulario">
+
+          <h1>Calculadora</h1>
+          <p>
+            Da el primer paso para conocer tu consumo energetico mensual, ingresa el valor de tu consumo en Kwh.
+          </p>          
+           <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Kwh</span>
                 <input id="kwh" type="text" class="form-control" placeholder="Varlor de consumo en Kwh" aria-label="Username" aria-describedby="basic-addon1"
                 onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1">
               </div>
             <button type="button" class="btn btn-success" onclick="resultado()">Calcular</button>
+
         </form>
+
       <img src="../RECURSO/CALCULADORA/BOMBILLO.png" alt="" class="bordes invertido">
+
+      <img src="../RECURSO/CONTENIDO/PANEL.jpg" alt="" id="inferior">  
     </main>
+
     <!--Implementacion de libreria Sweetalert-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Fin implementacion de libreria Sweetalert-->

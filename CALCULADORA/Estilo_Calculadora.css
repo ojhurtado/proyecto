@@ -1,13 +1,11 @@
 
 @media(min-width:791px){
     #contenido{
-        min-height: 9vh;
+        min-height: 10vh;
         display: flex;
     }
-
     
     #formulario{
-    
         width: 100%;
         text-align: center;
         margin-top: 5% !important;
@@ -18,8 +16,8 @@
     
     .bordes{
         border: none !important;
-        margin: 2%;
-        height: 30vh;
+        margin: 5%;
+        height: 20vh;
         filter: brightness(1.1);
         mix-blend-mode:multiply;
         z-index: 1;
@@ -35,6 +33,4 @@
         height: 0;
         width: 0%;
     }
-
-
 }
