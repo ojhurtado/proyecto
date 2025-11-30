@@ -31,18 +31,18 @@ body{
 }
 
 .car.itm1{
-    background-image:url('../recursos/CARRUCEL/PANEL.jpg') ;
+    background-image:url('../RECURSO/CARRUCEL/PANEL.jpg') ;
     backdrop-filter: blur(100px);
 }
 
 .car.itm2{
 
-    background-image:url('../recursos/CARRUCEL/ZONA_PANELES.jpg') ;
+    background-image:url('../RECURSO/CARRUCEL/ZONA_PANELES.jpg') ;
 }
 
 .car.itm3{
 
-    background-image:url('../recursos/CARRUCEL/RECIDENCIAS.jpg') ;
+    background-image:url('../RECURSO/CARRUCEL/RECIDENCIAS.jpg') ;
 }
 
 @media(min-width:791px){
@@ -54,38 +54,37 @@ body{
     }
     
     .formato-i{
-        min-height: 50vh ;
+        min-height: 70vh ;
         width: 50%;
-        padding: 5%;
         border: none;
     }
     
     .formato-i.img0{
-        background-image: url('../recursos/CONTENIDO/TECHO_CASA.jpg');
-        background-size: cover;
+        background-image: url('../RECURSO/CONTENIDO/TECHO_CASA.jpg');
+        background-size: contain;
         background-repeat: no-repeat;
         float: left;
     }
     
     .formato-i.img1{
-        background-image: url('../recursos/CONTENIDO/INS_PANEL.jpg');
-        background-size: cover;
+        background-image: url('../RECURSO/CONTENIDO/TIPOS_DE_ENERGIA.webp');
+        background-size: contain;
         background-repeat: no-repeat;
         float: right;
     }
     
     .formato-i.img2{
-        background-image: url('../recursos/CONTENIDO/CASA_PANEL.jpg');
-        background-size: cover;
+        background-image: url('../RECURSO/CONTENIDO/INS_PANEL.jpg');
+        background-size: contain;
         background-repeat: no-repeat;
         float: left;
     }
 
     .formato-i.img3{
-        background-image: linear-gradient( to left, #ffffff, transparent),url('../Recursos/Imagenes_inicio/Campo_eolica.jpg');
-        background-size: cover;
+        background-image: url('../RECURSO/CONTENIDO/CASA_PANEL.jpg');
+        background-size: contain;
         background-repeat: no-repeat;
-        float: left;
+        float: right;
     }
     
    .formato-t{
@@ -97,21 +96,18 @@ body{
     }
 
      .formato-t.texto0{
-        padding: 2.5%;
         direction: ltr;
         float: right;
     }
     
     .formato-t.texto1{
-        padding: 5%;
         direction: ltr;
         float: left;
     }
-   
+   |
     .formato-t.texto2{
-        padding: 2.5%;
         direction: ltr;
-        float: right !important;
+        float: right;
     }
     
     .formato-t.texto3{
@@ -123,7 +119,7 @@ body{
     
     #contenido5{
         width: 100%;
-        height: 70vh;
+        height: 40vh;
         display: flex;
     }
     .bordes{
@@ -156,13 +152,13 @@ body{
     
     #carouselExampleSlidesOnly{
         width: 50%;
-        height: 70vh;
+        height: 50vh;
         
     }
     
     .img-slide{
-        height: 70vh;
-        width: 100%;
+        height: 50vh;
+        width: 10%;
     }
     
     .img-slide.img1{

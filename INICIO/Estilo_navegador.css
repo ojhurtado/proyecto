@@ -1,8 +1,8 @@
 /* Estilos del menú de navegación (navbar) */
 .navbar{
     width: 100%;                                    /* La barra ocupa todo el ancho de la pantalla */
-    min-height: 10vh;                               /* Altura mínima del 12% del alto de la pantalla */
-    max-height: 50vh;                                /* Altura máxima del 50% del alto de la pantalla */
+    min-height: 1vh;                               /* Altura mínima del 12% del alto de la pantalla */
+    max-height: 15vh;                                /* Altura máxima del 50% del alto de la pantalla */
     background-color: rgb(0, 0, 0) !important; /* Fondo negro (forzado con !important) */
     position: fixed;                                /* La barra queda fija en la parte superior */
     z-index: 1;                                        /* La hace estar por encima de otros elementos */
@@ -13,13 +13,13 @@
 .navbar a.nav-link {
     background-color: rgb(255, 255, 255);        /* Fondo blanco para cada botón */
     display: flex;
-    color: rgb(0, 0, 0) !important;          /* Texto rojo (forzado con !important) */
+    color: rgb(0, 0, 0) !important;          /* Texto negro (forzado con !important) */
     padding: 2px 10px !important;   /* Espaciado interno (alto, lados) */
     margin: 0 30px !important;                  /* Separación horizontal entre botones */
     border-radius: 15px !important;            /* Bordes redondeados */
-    font-weight: 600;               /* Texto seminegrita */
+    font-weight: 2500;               /* Texto seminegrita */
     text-decoration: none;          /* Quita el subrayado de los enlaces */
-    transition: 0.5s ease;          /* Suaviza las animaciones al pasar el mouse */
+    transition: 0.1s ease;          /* Suaviza las animaciones al pasar el mouse */
     justify-content: center !important; /* Centra los links horizontalmente */
     align-items: center !important;     /* Centra verticalmente */
 }
