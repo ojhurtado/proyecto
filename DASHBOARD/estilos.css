@@ -18,4 +18,14 @@
         float: left;
     }
 
+     #h2{
+        margin-top: 600%;
+        margin-left: 5%;
+        font-size: 2.5rem;        
+    }
+
+    #graficoBarra{
+        margin-top: 100px;
+    }
+
 }
