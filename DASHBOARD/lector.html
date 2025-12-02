@@ -15,6 +15,74 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <style>
+    .contenedor-graficos {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .grafico-item {
+        width: 48%;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .tabla-item {
+        width: 50%;
+        background: #ffffff;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .grafico-item h3 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    canvas {
+        width: 100% !important;
+        height: 350px !important;
+    }
+
+    /* 📱 Responsive para celulares */
+    @media (max-width: 768px) {
+        .grafico-item {
+            width: 100%;
+        }
+    }
+
+    table{
+            justify-content: space-between;
+            gap: 30px;    
+            width: 30%;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+            margin-top: 30px;
+            margin-left: 5%;
+            margin-bottom: 30px;
+            
+        }
+
+        th, td{
+            
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th{
+            background-color: #7d7979;
+        }
+        tr{
+            background-color: #c7c3c3;
+        }
+</style>
+
 </head>
 <body>
 
@@ -39,27 +107,61 @@
     </div>
     <main id="contenido">
 
+
+     
+
 <div class="container mt-4">
-    <h1>📊 Gráficas de Energía - Consumo de Energía Solar Mundial</h1>
-    <p class="text-center"> Datos desde 1983 - 2021.</p>
-    <div id="contenedor">
-        <canvas id="graficoTorta"></canvas>
+    <h1 class="text-center">📊 Gráficas de Energía</h1>
+    <p class="text-center">Consumo y generación de energía solar.</p>
+
+    <div class="contenedor-graficos">
+
+        <!-- Gráfico de Torta -->
+        <div class="grafico-item">
+            <h3>Consumo Mundial de Energía Solar</h3>
+            <canvas id="graficoTorta"></canvas>
+        </div>
+
+        <!-- Gráfico de Barras -->
+        <div class="grafico-item">
+            <h3>Generación Solar en Colombia (TWh)</h3>
+            <canvas id="graficoBarra"></canvas>
+        </div>
+
+        <div class="tabla-item">
+            <h4 class="text-center">Tabla General</h4>
+            <div class="scroll-tabla">
+                <table id="tablaEnergiaSolar">
+                <thead>
+                    <tr>
+                        <th>ENTITY</th>
+                        <th>CODE</th>
+                        <th>AÑO</th>
+                        <th>GENERATION</th>
+
+                    </tr>
+                 </thead>
+                    <tbody>
+                            
+                    </tbody>
+                 </table>
+            </div>
+
+        </div>
+
     </div>
 </div>
 
-<!-- Cargar el JS solo UNA VEZ y al final -->
+
+
+    
+
+    
+
+<!-- Archivos JS -->
 <script src="Graficos.js"></script>
-
-
-<div class="container mt-4">
-    <h2 class="text-center">📊 Generación de Energía Solar en Colombia (TWh)</h2>
-    <p class="text-center">Datos desde 1965 hasta 2021</p>
-
-    <canvas id="graficoBarra"></canvas>
-</div>
-
-<!-- Archivo JS -->
 <script src="graficoBarra.js"></script>
+<script src="tabla.js"></script>
 
 </body>
 </html>
